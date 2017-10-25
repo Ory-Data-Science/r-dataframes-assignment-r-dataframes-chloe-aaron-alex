@@ -1,0 +1,17 @@
+> by_experiment <- group_by(shrub, experiment)
+> avg_height <- summarize(by_experiment , avg_height = mean(height)) %>% 
++ print(by_experiment) %>% 
++ print(avg_height)
+# A tibble: 3 x 2
+  experiment avg_height
+       <int>      <dbl>
+1          1       4.70
+2          2       5.10
+3          3       3.85
+# A tibble: 3 x 2
+  experiment avg_height
+       <int>      <dbl>
+1          1       4.70
+2          2       5.10
+3          3       3.85
+> 
