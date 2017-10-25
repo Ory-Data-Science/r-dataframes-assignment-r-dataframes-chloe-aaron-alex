@@ -1,0 +1,11 @@
+install.packages("dplyr")
+library(dplyr)
+help("dplyr")
+
+select(shrubs, length)
+select(shrubs, site, experiment)
+print(select(shrubs, site, experiment))
+filter(shrubs, height > 5)
+print(filter(shrubs, height > 5))
+shrub_data_w_vols <- mutate(shrubs, "volume" = length * width * height)
+print(shrubs_data_w_vols)
