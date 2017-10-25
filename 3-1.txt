@@ -15,3 +15,14 @@
 2          2       5.10
 3          3       3.85
 > 
+
+> by_site <- group_by(shrub, site)
+> max_height <-  summarise(by_site, max_height = max(height))
+> print(max_height)
+# A tibble: 4 x 2
+   site max_height
+  <int>      <dbl>
+1     1        9.6
+2     2        4.0
+3     3        7.5
+4     4        6.5
