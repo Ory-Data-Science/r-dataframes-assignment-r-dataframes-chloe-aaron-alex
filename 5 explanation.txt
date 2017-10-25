@@ -1,0 +1,2 @@
+When typing commands into R I ran each command individually to ensure that each one worked before I moved on to the next command. 
+If the code were 1000's of lines long I could run groups of lines (perhaps 10-50) at a time and see if the data works and makes sense. It's not a perfect system but it would be better than running everything at once or each line individually. 
